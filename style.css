@@ -1,0 +1,37 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cover-flow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  margin-top: 120px;
+  perspective: 1000px;
+}
+
+.cover-container {
+  display: flex;
+  gap: 50px; /* Spacing between cards */
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.cover-container img {
+  min-width: 250px; /* Adjust image size as needed */
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+.album-card {
+  margin: 0 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
